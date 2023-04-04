@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+  />
+  <title>ToDoing</title>
+  <link rel="stylesheet" href="src/css/style.css" />
+  <link rel="stylesheet" href="src/css/media.css" />
+  <link rel="icon" type="image/x-icon" href="src/img/favicon.png" />
+  <body>
+    <div class="app">
+      <div class="nav-menu" id="">
+        <div class="header-buttons-block">
+          <button class="header-main-page-btn" id="header-current-btn">
+            <i class="fa-regular fa-user"></i>
+            <p>Home</p>
+          </button>
+          <button class="header-transactions-page-btn" id="">
+            <i class="fa-solid fa-cubes"></i>
+            <p>Categories</p>
+          </button>
+          <button class="header-adding-page-btn" id="">
+            <i class="fa-regular fa-plus"></i>
+            <p>New</p>
+          </button>
+          <button class="header-categories-page-btn" id="">
+            <i class="fa-solid fa-chart-column"></i>
+            <p>Stats</p>
+          </button>
+          <button class="header-adding-page-btn" id="">
+            <i class="fa-solid fa-border-all"></i>
+            <p>More</p>
+          </button>
+          <!-- <button class="header-chart-page-btn" id="">
+                  <i class="fa-solid fa-chart-pie"></i>
+                  <p>Charts</p>
+                </button>
+                <button class="header-settings-page-btn" id="">
+                  <i class="fa-solid fa-gear"></i>
+                  <p>Settings</p>
+                </button> -->
+        </div>
+      </div>
+      <div class="home-page" id="hidden">
+        <div class="hp-header">
+          <button class="user-profile-btn">
+            <img
+              src="https://avatars.githubusercontent.com/u/77488114?v=4"
+              alt="Avatar"
+              class="hp-user-avatar-img"
+            />
+          </button>
+          <button class="hp-notifications-btn">
+            <i class="fa-regular fa-bell"></i>
+          </button>
+        </div>
+        <p class="hp-hello-title">Hello, user</p>
+        <p class="hp-hello-subtitle">Let's be productive today</p>
+        <div class="hp-today-tasks">
+          <p class="hp-today-tasks-date">Today <span>(March 31, 2023)</span></p>
+          <div class="hp-today-tasks-list">
+            <div class="hp-today-task-item">
+              <div class="hp-today-task-item-block1">
+                <div class="hp-today-task-info">
+                  <p class="hp-today-task-name">Task name</p>
+                  <p class="hp-today-task-description">Task description</p>
+                </div>
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="hp-today-task-checkbox"
+                />
+              </div>
+              <div class="hp-today-task-item-block2">
+                <div class="hp-today-task-item-category">Category</div>
+                <div class="hp-today-task-item-priority" id="priority-low">
+                  <i class="fa-regular fa-flag"></i>Low
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="signup-page" id="hidden">
+        <div class="auth-page-block">
+          <p class="auth-page-header">To start planning your day,</p>
+          <p class="auth-page-subheader">Sign up</p>
+          <div class="auth-page-form">
+            <div class="auth-page-form-block">
+              <i class="fa-solid fa-user"></i>
+              <input
+                type="text"
+                class="signup-page-nickname-input"
+                placeholder="Nickname"
+              />
+            </div>
+            <div class="auth-page-form-block">
+              <i class="fa-solid fa-envelope"></i>
+              <input
+                type="email"
+                class="signup-page-email-input"
+                placeholder="Email"
+              />
+            </div>
+            <div class="auth-page-form-block">
+              <i class="fa-solid fa-key"></i>
+              <input
+                type="password"
+                class="signup-page-password-input"
+                placeholder="Password"
+              />
+            </div>
+            <button class="auth-page-signup-btn">Sign up</button>
+          </div>
+          <p class="sp-already-have-acc-label">
+            Already have an account?
+            <a href="" class="auth-page-login-link">Log in</a>
+          </p>
+        </div>
+      </div>
+      <div class="login-page" id="hidden">
+        <div class="auth-page-block">
+          <p class="auth-page-header">To continue planning your day,</p>
+          <p class="auth-page-subheader">Log in</p>
+          <div class="auth-page-form">
+            <div class="auth-page-form-block">
+              <i class="fa-solid fa-envelope"></i>
+              <input
+                type="email"
+                class="login-page-email-input"
+                placeholder="Email"
+              />
+            </div>
+            <div class="auth-page-form-block">
+              <i class="fa-solid fa-key"></i>
+              <input
+                type="password"
+                class="login-page-password-input"
+                placeholder="Password"
+              />
+            </div>
+            <button class="login-page-login-btn">Log in</button>
+          </div>
+          <p class="sp-already-have-acc-label">
+            New here?
+            <a href="" class="auth-page-signup-link">Create account</a>
+          </p>
+        </div>
+      </div>
+      <div class="addTask-page" id="hidden">
+        <p class="addtask-header">Create new task</p>
+        <div class="addtask-page-form-block">
+          <i class="fa-solid fa-pen"></i>
+          <input
+            type="text"
+            class="addtask-input-name"
+            placeholder="Task name"
+          />
+        </div>
+        <div class="addtask-page-form-block">
+          <i class="fa-solid fa-circle-info"></i>
+          <input
+            type="text"
+            class="addtask-input-description"
+            placeholder="Task description"
+          />
+        </div>
+        <p class="addtask-page-label">Due to</p>
+        <input type="date" class="addtask-input-date" />
+        <p class="addtask-page-label">Priority</p>
+        <div class="addtask-page-priority-container">
+          <button class="addtask-priority-high-button" id="priority-high">
+            <i class="fa-regular fa-flag"></i>
+            High
+          </button>
+          <button class="addtask-priority-medium-button" id="priority-medium">
+            <i class="fa-regular fa-flag"></i>
+            Medium
+          </button>
+          <button class="addtask-priority-low-button" id="priority-low">
+            <i class="fa-regular fa-flag"></i>
+            Low
+          </button>
+        </div>
+        <p class="addtask-page-label">Category</p>
+        <div class="addtask-page-category-container">
+          <!-- <button class="addtask-category-item">Family</button> -->
+        </div>
+        <button class="add-task-button">Add task</button>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/639cd4a693.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Moment.js library (Date & Time) -->
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.4/moment.min.js"></script>
+    <script src="src/js/main.js"></script>
+  </body>
+</html>

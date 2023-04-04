@@ -1,0 +1,41 @@
+@media screen and (max-width: 600px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative;
+  }
+  /* .app {
+      width: 100%;
+      height: 100%;
+    } */
+  .home-page {
+    width: 100%;
+  }
+  .nav-menu {
+    width: 100%;
+  }
+  .header-buttons-block button {
+    width: 45px;
+    height: 45px;
+  }
+  .adding-modal-window {
+    width: 100%;
+  }
+  .transactions-page {
+    width: 100%;
+  }
+  .adding-categories-container {
+    height: 80%;
+  }
+  .signup-page {
+    width: 100%;
+  }
+  .login-page {
+    width: 100%;
+  }
+  .addTask-page {
+    width: 100%;
+  }
+}
