@@ -15,7 +15,7 @@
     <div class="app">
       <div class="nav-menu" id="">
         <div class="header-buttons-block">
-          <button class="header-main-page-btn" id="header-current-btn">
+          <button class="header-main-page-btn" id="">
             <i class="fa-regular fa-user"></i>
             <p>Home</p>
           </button>
@@ -23,7 +23,7 @@
             <i class="fa-solid fa-cubes"></i>
             <p>Categories</p>
           </button>
-          <button class="header-adding-page-btn" id="">
+          <button class="header-adding-page-btn" id="header-current-btn">
             <i class="fa-regular fa-plus"></i>
             <p>New</p>
           </button>
@@ -35,58 +35,9 @@
             <i class="fa-solid fa-border-all"></i>
             <p>More</p>
           </button>
-          <!-- <button class="header-chart-page-btn" id="">
-                  <i class="fa-solid fa-chart-pie"></i>
-                  <p>Charts</p>
-                </button>
-                <button class="header-settings-page-btn" id="">
-                  <i class="fa-solid fa-gear"></i>
-                  <p>Settings</p>
-                </button> -->
         </div>
       </div>
-      <div class="home-page" id="hidden">
-        <div class="hp-header">
-          <button class="user-profile-btn">
-            <img
-              src="https://avatars.githubusercontent.com/u/77488114?v=4"
-              alt="Avatar"
-              class="hp-user-avatar-img"
-            />
-          </button>
-          <button class="hp-notifications-btn">
-            <i class="fa-regular fa-bell"></i>
-          </button>
-        </div>
-        <p class="hp-hello-title">Hello, user</p>
-        <p class="hp-hello-subtitle">Let's be productive today</p>
-        <div class="hp-today-tasks">
-          <p class="hp-today-tasks-date">Today <span>(March 31, 2023)</span></p>
-          <div class="hp-today-tasks-list">
-            <div class="hp-today-task-item">
-              <div class="hp-today-task-item-block1">
-                <div class="hp-today-task-info">
-                  <p class="hp-today-task-name">Task name</p>
-                  <p class="hp-today-task-description">Task description</p>
-                </div>
-                <input
-                  type="checkbox"
-                  name=""
-                  id=""
-                  class="hp-today-task-checkbox"
-                />
-              </div>
-              <div class="hp-today-task-item-block2">
-                <div class="hp-today-task-item-category">Category</div>
-                <div class="hp-today-task-item-priority" id="priority-low">
-                  <i class="fa-regular fa-flag"></i>Low
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="signup-page" id="hidden">
+      <div class="signup-page" id="">
         <div class="auth-page-block">
           <p class="auth-page-header">To start planning your day,</p>
           <p class="auth-page-subheader">Sign up</p>
@@ -119,11 +70,11 @@
           </div>
           <p class="sp-already-have-acc-label">
             Already have an account?
-            <a href="" class="auth-page-login-link">Log in</a>
+            <a href="login.html" class="auth-page-login-link">Log in</a>
           </p>
         </div>
       </div>
-      <div class="login-page" id="hidden">
+      <div class="login-page" id="">
         <div class="auth-page-block">
           <p class="auth-page-header">To continue planning your day,</p>
           <p class="auth-page-subheader">Log in</p>
@@ -148,11 +99,70 @@
           </div>
           <p class="sp-already-have-acc-label">
             New here?
-            <a href="" class="auth-page-signup-link">Create account</a>
+            <a href="index.html" class="auth-page-signup-link"
+              >Create account</a
+            >
           </p>
         </div>
       </div>
-      <div class="addTask-page" id="hidden">
+      <div class="home-page" id="">
+        <div class="hp-header">
+          <button class="user-profile-btn">
+            <img
+              src="https://avatars.githubusercontent.com/u/77488114?v=4"
+              alt="Avatar"
+              class="hp-user-avatar-img"
+            />
+          </button>
+          <button class="hp-notifications-btn">
+            <i class="fa-regular fa-bell"></i>
+          </button>
+        </div>
+        <p class="hp-hello-title">Hello, user</p>
+        <p class="hp-hello-subtitle">Let's be productive today</p>
+        <div class="hp-today-tasks">
+          <p class="hp-today-tasks-date">Today <span>(March 31, 2023)</span></p>
+          <div class="hp-sort-buttons">
+            <button class="hp-inprogress-btn" id="hp-current-sort-btn">
+              <div class="hp-btn-block">
+                <i class="fa-regular fa-clock"></i>
+                <span class="hp-inprogress-tasks-amount">0</span>
+              </div>
+              <p>In progress</p>
+            </button>
+            <button class="hp-completed-btn">
+              <div class="hp-btn-block">
+                <i class="fa-regular fa-circle-check"></i>
+                <span class="hp-completed-tasks-amount">0</span>
+              </div>
+              <p>Completed</p>
+            </button>
+          </div>
+          <div class="hp-today-tasks-list">
+            <div class="hp-today-task-item">
+              <div class="hp-today-task-item-block1">
+                <div class="hp-today-task-info">
+                  <p class="hp-today-task-name">Task name</p>
+                  <p class="hp-today-task-description">Task description</p>
+                </div>
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="hp-today-task-checkbox"
+                />
+              </div>
+              <div class="hp-today-task-item-block2">
+                <div class="hp-today-task-item-category">Category</div>
+                <div class="hp-today-task-item-priority" id="priority-low">
+                  <i class="fa-solid fa-flag"></i>Low
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="addTask-page" id="">
         <p class="addtask-header">Create new task</p>
         <div class="addtask-page-form-block">
           <i class="fa-solid fa-pen"></i>
@@ -172,22 +182,31 @@
         </div>
         <p class="addtask-page-label">Due to</p>
         <input type="date" class="addtask-input-date" />
-        <p class="addtask-page-label">Priority</p>
+        <p class="addtask-page-label addtask-label-priority">Priority</p>
         <div class="addtask-page-priority-container">
-          <button class="addtask-priority-high-button" id="priority-high">
-            <i class="fa-regular fa-flag"></i>
+          <button
+            class="addtask-priority-high-button add-task-priority-btn"
+            id="priority-high"
+          >
+            <i class="fa-solid fa-flag"></i>
             High
           </button>
-          <button class="addtask-priority-medium-button" id="priority-medium">
-            <i class="fa-regular fa-flag"></i>
+          <button
+            class="addtask-priority-medium-button add-task-priority-btn"
+            id="priority-medium"
+          >
+            <i class="fa-solid fa-flag"></i>
             Medium
           </button>
-          <button class="addtask-priority-low-button" id="priority-low">
-            <i class="fa-regular fa-flag"></i>
+          <button
+            class="addtask-priority-low-button add-task-priority-btn"
+            id="priority-low"
+          >
+            <i class="fa-solid fa-flag"></i>
             Low
           </button>
         </div>
-        <p class="addtask-page-label">Category</p>
+        <p class="addtask-page-label addtask-label-category">Category</p>
         <div class="addtask-page-category-container">
           <!-- <button class="addtask-category-item">Family</button> -->
         </div>
